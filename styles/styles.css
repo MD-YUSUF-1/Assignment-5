@@ -1,12 +1,20 @@
 /* shared styles */
-.primary-color{
+.primary-color {
     color: rgb(29, 209, 0)
+}
+
+/* Navbar starts here */
+.Bus-Logo-in-nav {
+    box-sizing: border-box;
+    border: 1px solid rgba(29, 209, 0, 0.4);
+    border-radius: 12px;
+    background: rgba(29, 209, 0, 0.1);
 }
 
 /* Banner Starts */
 .banner {
     border-radius: 32px;
-    background: linear-gradient(180deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%), url("../images/banner.png");
+    background: linear-gradient(180deg, rgba(3, 7, 18, 0.5), rgba(3, 7, 18, 0) 100%), url("../images/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +23,10 @@
     margin: 60px auto 0px;
 }
 
-#buy-ticket-btn{
+#buy-ticket-btn {
+    font-weight: 700;
+    font-size: 18px;
+    color: #030712;
     border-radius: 12px;
     padding: 21px 30px 21px 30px;
     background-color: rgb(29, 209, 0);
