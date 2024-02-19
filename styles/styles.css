@@ -2,6 +2,9 @@
 .primary-color {
     color: rgb(29, 209, 0)
 }
+.shared-background{
+    background: rgb(247, 248, 248);
+}
 
 
 /* Navbar starts here */
