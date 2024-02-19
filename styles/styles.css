@@ -3,6 +3,7 @@
     color: rgb(29, 209, 0)
 }
 
+
 /* Navbar starts here */
 .Bus-Logo-in-nav {
     box-sizing: border-box;
@@ -39,4 +40,17 @@
     border: 1px solid rgb(29, 209, 0);
     border-radius: 12px;
 
+}
+
+/* Ticket section styles */
+.ticket-main {
+    box-sizing: border-box;
+    border-top: 2px solid rgb(29, 209, 0);
+    border-radius: 88px 88px 0px 0px;
+    background: rgb(247, 248, 248);
+}
+.destination-info{
+    border-radius: 12px;
+    background: rgba(3, 7, 18, 0.05);
+    padding: 19px 16px;
 }
