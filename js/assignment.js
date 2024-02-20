@@ -12,14 +12,14 @@ for (let seats of seatChoice) {
         count = count + 1;
         seats.style.backgroundColor = '#1DD100';
 
-        document.getElementById('selected-seat').innerText = count;
-
-        document.getElementById('left-seats').innerText = 8 - count;
         if(count>4){
             alert('Maximum selected seats reach')
             seats.style.backgroundColor = '';
             return;
         }
+        document.getElementById('selected-seat').innerText = count;
+
+        document.getElementById('left-seats').innerText = 8 - count;
 
         const seatText = seats.innerText;
         const seatPrice = document.getElementById('seat-price').innerText;
