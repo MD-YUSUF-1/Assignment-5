@@ -70,6 +70,19 @@ applyBtn.addEventListener('click', function () {
 
 const nextBtn = document.getElementById('next-btn');
 nextBtn.addEventListener('click', function () {
-    console.log("YUSUF")
+    const grandTotalPriceForNextBtn = document.getElementById('grand-total').innerText;
+    const convertedGrandTotalPriceForNextBtn = parseInt(grandTotalPriceForNextBtn)
+    if(convertedGrandTotalPriceForNextBtn!==0){
+    document.getElementById('success-pop-up').style.display='block';
+    }
+    else{
+        alert("You did not select any seat ")
+    }
+})
+
+
+const continueBtn = document.getElementById('continue-btn');
+continueBtn.addEventListener('click', function () {
+    document.getElementById('success-pop-up').style.display='none';
 })
 

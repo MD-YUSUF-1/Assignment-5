@@ -132,7 +132,7 @@
     <!-- Ticket Section Starts -->
     <section id="ticket">
       <!-- ticket-main class styles added in css styles file -->
-      <div class="ticket-main mt-28 w-full">
+      <div class="ticket-main relative mt-28 w-full">
         <h3 class="font-bold text-4xl text-center mt-28">
           Green Paribahan
         </h3>
@@ -279,14 +279,17 @@
         </div>
         <!-- Seat booking sub-section ends here -->
         <!-- Congratulation section starts -->
-        <div class=" w-[718px] h-[481px] bg-[#FFFFFF] rounded-xl ">
+        <div id="success-pop-up" class=" hidden w-[718px] h-[481px] bg-[#FFFFFF] rounded-xl absolute top-[550px] left-[450px]">
           <img class=" mx-auto pt-24 mb-6 " src="./images/success.png" alt="">
-          <p class="text-[#27AE60] font-bold text-2xl text-center pb-8">Success</p>
-          <p class="font-medium text-xl text-center pb-4 w-[561px] mx-auto">Thank you for Booking Our Bus Seats. 
+          <p class="text-[#27AE60] font-bold text-2xl text-center pb-6">Success</p>
+          <p class="font-medium text-xl text-center pb-3 w-[561px] mx-auto">Thank you for Booking Our Bus Seats. 
             We are working hard to find the best service and deals for you. 
             </p>
-          <p class="font-light text-xl text-center">Shortly you will find a confirmation in your email.</p>
-          <button>Continue</button>
+          <p class="font-light text-xl text-center pb-3">Shortly you will find a confirmation in your email.</p>
+          
+          <div class="mx-auto w-[300px]">
+            <button id="continue-btn" class="w-full rounded-[32px] bg-[#27AE60] py-4">Continue</button>
+          </div>
         </div>
         <!-- Congratulation section ends -->
       </div>
