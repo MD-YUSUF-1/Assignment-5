@@ -68,5 +68,8 @@ applyBtn.addEventListener('click', function () {
 })
 
 
-
+const nextBtn = document.getElementById('next-btn');
+nextBtn.addEventListener('click', function () {
+    console.log("YUSUF")
+})
 
