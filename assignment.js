@@ -18,6 +18,7 @@ for (let seats of seatChoice) {
         if(count>4){
             alert('Maximum selected seats reach')
             seats.style.backgroundColor = '';
+            return;
         }
 
         const seatText = seats.innerText;
