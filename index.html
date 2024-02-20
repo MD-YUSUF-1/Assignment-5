@@ -157,7 +157,7 @@
               <div class="bg-[#1DD10026] rounded-xl ">
                 <div class="p-4">
                   <img class="inline" src="./images/seat-green.png" alt="">
-                  <p class="inline text-[#1DD100] font-inter"> <span>8</span> Seats Left</p>
+                  <p class="inline text-[#1DD100] font-inter"> <span id="left-seats">8</span> Seats Left</p>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@
           </div>
           <div class=" rounded-3xl w-[257px] h-[400px] ">
             <img class="mt-[136px] mx-auto mb-7" src="./images/fare.png" alt="">
-            <p class="font-bold text-3xl text-center">550 Taka</p>
+            <p class="font-bold text-3xl text-center"> <span id="seat-price">550</span>Taka</p>
             <p class="pt-1 font-semibold text-xl text-center text-[#03071299]">Per Seat</p>
           </div>
         </div>
@@ -245,30 +245,29 @@
               <div class="rounded-xl bg-[#F7F8F8]">
                 <div class="mx-7">
                   <div class="pt-6 flex justify-between">
-                    <p class="text-[#030712] font-medium text-xl">Seat <span
+                    <p class="text-[#030712] font-medium text-xl">Seat <span id="selected-seat"
                         class=" rounded-full bg-green-600 p-1 text-[#FFF]">0</span></p>
                     <p class="text-[#030712] font-medium text-xl">Class</p>
                     <p class="text-[#030712] font-medium text-xl">Price</p>
                   </div>
                   <hr class="my-5 border-1 border-dashed">
-                  <div id="choice-seats-details">
-                    <!-- jklsjkdzlcmk,zmcv,.mvsdklfjjf.
+                  <div>
+                    <ul id="choice-seats-details">
 
-
-                    jsfbjd -->
+                    </ul>
                   </div>
                   <hr class="my-5">
                   <div class="flex justify-between">
                     <p class="text-[#030712] font-medium text-xl">Total Price</p>
-                    <p class="text-[#030712] font-medium text-xl">BDT <span> 0 </span></p>
+                    <p class="text-[#030712] font-medium text-xl">BDT <span id="total-price"> 0 </span></p>
                   </div>
-                  <div class="relative py-5">
-                    <input class="pl-3 pr-64 py-3 rounded-xl" type="text" name="" id="" placeholder="Have any Coupon">
-                    <button class="absolute p-2 px-8 right-6 top-6 rounded-xl bg-[#1DD100]">Apply</button>
+                  <div id="apply-coupon" class="relative py-5">
+                    <input class="pl-3 pr-64 py-3 rounded-xl" type="text" name="" id="input-coupon" placeholder="Have any Coupon">
+                    <button id="apply-btn" class="absolute p-2 px-8 right-6 top-6 rounded-xl bg-[#1DD100]" >Apply</button>
                   </div>
                   <div class="flex justify-between mb-4">
                     <p class="text-[#030712] font-medium text-xl">Grand Total</p>
-                    <p class="text-[#030712] font-medium text-xl">BDT <span> 0 </span></p>
+                    <p class="text-[#030712] font-medium text-xl">BDT <span id="grand-total">0</span></p>
                   </div>
                   <div>
                   </div>
@@ -276,9 +275,7 @@
                 <button class="w-full rounded-xl bg-[#1DD100] text-[#FFF] font-semibold p-4">Next</button>
               </div>
             </div>
-
           </div>
-
         </div>
         <!-- Seat booking sub-section ends here -->
       </div>

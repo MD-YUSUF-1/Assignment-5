@@ -57,3 +57,8 @@
     background: rgba(3, 7, 18, 0.05);
     padding: 19px 16px;
 }
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
